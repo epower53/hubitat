@@ -1,7 +1,7 @@
 definition(
     name: "Trinary-Thermostat-Status",
     namespace: "hubitat",
-    author: "Erik Power (ported from code originally published by Bruce Ravenel)",
+    author: "Erik Power (modified version of code originally published by Bruce Ravenel)",
     description: "Convert thermostatOperatingState into a trinary numeric value using a virtual temperature sensor",
     category: "Convenience",
     iconUrl: "",
