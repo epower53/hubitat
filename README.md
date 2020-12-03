@@ -9,9 +9,9 @@ My simple code converts the enum-typed property into an integer-typed property s
 It does this:
   1) creates a virtual temperature sensor as an integer storage device
   2) subscribes to the thermostatOperatingState of a thermostat device and parses the enum into bins:
-    i) "cooling" and "pending cool" are assigned a value of 0
-    ii) "idle", "fan only", and "vent economizer" are assigned a value of 2
-    iii) "heating" and "pending heat" are assigned a value of 4
+    1) "cooling" and "pending cool" are assigned a value of 0
+    2) "idle", "fan only", and "vent economizer" are assigned a value of 2
+    3) "heating" and "pending heat" are assigned a value of 4
   3) In TM2, I subscribe to the virtual temperature sensor and not the thermostat device. This lets me use the temperature field and flip the switch to get the 3rd icon.
   4) I set a "low" threshold of 1 and a "high" threshold of 3, and then assign icons for cooling, fan/idle, and heating.
   5) Profit!
